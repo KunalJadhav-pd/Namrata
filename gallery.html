@@ -3,19 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Namrata Advertising</title>
+	<title>Medigo Red Portfolio</title>
     <meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="author" content="templatemo">
-	
+
+	<!-- Google Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
 
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="css/misc.css">
 	<link rel="stylesheet" href="css/red-scheme.css">
-    <link rel="stylesheet" href="css/lightbox.css">
 	
+	<!-- JavaScripts -->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 
@@ -24,11 +26,12 @@
 </head>
 <body>
 
+
 	<div class="responsive_menu">
         <ul class="main_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-<!--             <li><a href="#">Portfolio</a>
+            <li><a href="#">Portfolio</a>
             	<ul>
             		<li><a href="#">Portfolio Grid</a></li>
             		<li><a href="#">Project Image</a></li>
@@ -41,8 +44,8 @@
 					<li><a href="#">Blog Single</a></li>
                     <li><a href="#">visit templatemo</a></li>
 				</ul>
-            </li> -->
-            <li><a href="gallery.html">Gallery</a></li>
+            </li>
+            <li><a href="#">Archives</a></li>
             <li><a href="#">Contact</a></li>
         </ul> 
     </div> 
@@ -66,20 +69,15 @@
 							<ul class="sf-menu">
 								<li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-<!-- 					            <li><a href="#">Portfolio</a>
+					            <!-- <li><a href="#">Portfolio</a>
 					            	<ul>
 					            		<li><a href="portfolio.html">Portfolio Grid</a></li>
 					            		<li><a href="project-image.html">Project Image</a></li>
 					            		<li><a href="project-slideshow.html">Project Slideshow</a></li>
 					            	</ul>
-					            </li>
-					            <li><a href="#">Blog</a>
-									<ul>
-										<li><a href="blog.html">Blog Standard</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-                                        <li><a href="#">visit templatemo</a></li>
-									</ul>
 					            </li> -->
+					            <!-- <li><a href="blog.html">Blogs</a></li> -->
+								<!-- <li><a href="services.html">Services</a></li> -->
 					            <li class="active"><a href="gallery.html">Gallery</a></li>
 					            <li><a href="contact.html">Contact</a></li>
 							</ul> 
@@ -104,85 +102,220 @@
 		<div class="container">
 		  <div class="row">
 			<div class="col-lg-12">
-			  <span class="breadcrumb"><a href="#">Home</a>  /  Galley</span>
+			  <span class="breadcrumb"><a href="index.html">Home</a>  /  Gallery</span>
 			  <h3>Gallery</h3>
 			</div>
 		  </div>
 		</div>
 	</div>
 
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-12">
+				<ul id="filters" class="mixitup-controls">
+					<li class="filter" data-filter="all">All</li>
+					<li class="filter" data-filter="branding">Branding</li>
+					<li class="filter" data-filter="illustration">Illustration</li>
+					<li class="filter" data-filter="business">Business</li>
+					<li class="filter" data-filter="identity">Identity</li>
+				</ul>
+			</div> <!-- /.col-md-12 -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
 
-    <section class="section" id="projects">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-3">
-                  <div class="section-heading">
-                      <h6>Our Projects</h6>
-                      <h2>Some of our latest projects</h2>
-                  </div>
-                  <div class="filters">
-                      <ul>
-                          <li class="active" data-filter="*">All</li>
-                          <li data-filter=".des">Web Design</li>
-                          <li data-filter=".dev">Web Development</li>
-                          <li data-filter=".gra">Graphics</li>
-                          <li data-filter=".tsh">Artworks</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-9">
-                  <div class="filters-content">
-                      <div class="row grid">
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                            <div class="item">
-                              <a href="images\includes\project-big-item-01.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-big-item-01.jpg" alt=""></a>
+	<div class="container">
+		<div class="row">
+			<div class="portfolio-holder" id="Grid">
+				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Illustration</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Visual Admin</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project1.jpg" title="Visual Admin">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                            <div class="item">
-                              <a href="images\includes\project-big-item-02.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-big-item-02.jpg" alt=""></a>
+                        </div>
+                        <img src="images/includes/project1.jpg" alt="Visual Admin">
+					</div>
+				</div> <!-- /.col-md-4 -->
+
+				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Branding</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Compass Template</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project2.jpg" title="Compass Template">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all gra">
-                            <div class="item">
-                              <a href="images\includes\project-big-item-03.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-big-item-03.jpg" alt=""></a>
+                        </div>
+                        <img src="images/includes/project2.jpg" alt="Compass Template">
+					</div>
+				</div> <!-- /.col-md-4 -->
+
+				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Illustration</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Awesome Theme</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project3.jpg" title="Awesome Theme">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tsh">
-                            <div class="item">
-                              <a href="images\includes\project-big-item-04.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-big-item-04.jpg" alt=""></a>
+                        </div>
+                        <img src="images/includes/project3.jpg" alt="Awesome Theme">
+					</div>
+				</div> <!-- /.col-md-4 -->
+
+				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Illustration</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Volton Personal Site</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project4.jpg" title="Volton Personal Site">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                            <div class="item">
-                              <a href="images\includes\project-item-05.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-item-05.jpg" alt=""></a>
+                        </div>
+                        <img src="images/includes/project4.jpg" alt="Volton Personal Site">
+					</div>
+				</div> <!-- /.col-md-4 -->
+
+				<div class="portfolio-post col-sm-6 col-md-4 mix business">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Business</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Rectangle Design</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project5.jpg" title="Rectangle Design">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                            <div class="item">
-                              <a href="images\includes\project-item-06.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="images\includes\project-item-06.jpg" alt=""></a>
+                        </div>
+                        <img src="images/includes/project5.jpg" alt="Rectangle Design">
+					</div>
+				</div> <!-- /.col-md-4 -->
+
+				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Branding</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Masonry Gallery</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project6.jpg" title="Masonry Gallery">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                        <img src="images/includes/project6.jpg" alt="Masonry Gallery">
+					</div>
+				</div> <!-- /.col-md-4 -->
 
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- ***** Projects Area Ends ***** -->
+				<div class="portfolio-post col-sm-6 col-md-4 mix branding identity">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Branding / Identity</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Gloss Template</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project7.jpg" title="Gloss Template">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/project7.jpg" alt="Gloss Template">
+					</div>
+				</div> <!-- /.col-md-4 -->
 
+				<div class="portfolio-post col-sm-6 col-md-4 mix identity illustration">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Identity / Illustration</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Ion Template</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project8.jpg" title="Ion Template">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/project8.jpg" alt="Ion Template">
+					</div>
+				</div> <!-- /.col-md-4 -->
 
+				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+					<div class="thumb-post">
+						<div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Branding</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Freshness</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/project9.jpg" title="Freshness">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/project9.jpg" alt="Freshness">
+					</div>
+				</div> <!-- /.col-md-4 -->
+				
+			</div> <!-- /.portfolio-holder -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="pages">
+					<li><a href="#" class="active">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">13</a></li>
+				</ul>
+			</div> <!-- /.col-md-12 -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
 
-
-
-
-
-
-
-    <footer>
+	<footer>
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-3 footer-item">
@@ -261,9 +394,11 @@
 	  </div>
   
 
+
+	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>
 	<script src="js/min/medigo-custom.min.js"></script>
-    <script src="js/lightbox.js"></script>
+
 
 </body>
 </html>
